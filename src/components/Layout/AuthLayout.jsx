@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "../Elements/Logo";
-import FromSignIn from "../Fragments/FormSignIn";
+
 
 const AuthLayout = (props) => {
     const { children } = props;

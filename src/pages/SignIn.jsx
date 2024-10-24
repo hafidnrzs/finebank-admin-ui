@@ -1,7 +1,7 @@
 import FormSignIn from "../components/Fragments/FormSignIn";
-import Authlayout from "../components/Layouts/Authlayout";
+import AuthLayout from "../components/Layout/AuthLayout";
 
-const SignInPage = () => {
+const SignIn = () => {
   return (
     <AuthLayout type="sign in">
       <FormSignIn />
@@ -9,4 +9,4 @@ const SignInPage = () => {
   );
 };
 
-export default SignInPage;
+export default SignIn;
