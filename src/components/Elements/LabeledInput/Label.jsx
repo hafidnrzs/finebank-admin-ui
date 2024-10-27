@@ -5,7 +5,7 @@ const Label = (props) => {
       <label htmlFor={htmlFor} className="block text-sm mb-2">
         {children}
       </label>
-    );
-  };
+    )
+  }
   
   export default Label;

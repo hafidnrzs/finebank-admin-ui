@@ -1,14 +1,11 @@
-import { Children } from "react";
-
-const Button = () => {
+const Button = (props) => {
+    const { children, variant, type } = props
+  
     return (
-        <button
-            className={'h-12 rounded-md text-sm ${variant}'}
-            type={type}
-        >
-            {Children}
-        </button>
-    );
-};
-
-export default Button;
+      <button className={`h-12 rounded-md text-sm ${variant}`} type={type}>
+        {children}
+      </button>
+    )
+  }
+  
+  export default Button

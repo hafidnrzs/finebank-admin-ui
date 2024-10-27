@@ -8,7 +8,7 @@ const LabeledInput = (props) => {
             <Label htmlFor={name}>{label}</Label>
             <Input name={name} type={type} placeholder={placeholder}/>
         </>
-    );
-};
+    )
+}
 
 export default LabeledInput;
