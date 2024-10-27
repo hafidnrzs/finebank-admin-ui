@@ -14,6 +14,20 @@ const AuthLayout = (props) => {
           <div className="mt-16">{children}</div>
           {/* form end */}
           {/* teks start */}
+          <div className="text-center flex justify-center items-center flex-col">
+            {type == "sign up" && (
+              <div className="font-bold text-xl">Create an account</div>
+            )}
+            {type == "forgot" && (
+              <>
+                <div className="font-bold text-xl">Forgot Password</div>
+                <div className="text-gray-03 text-sm mt-2 ">
+                  Enter your email address to get the
+                  <br />
+                  password reset link 
+                </div>
+            )}
+          </div>
           <div className="my-9 px-7 flex justify-center text-xs text-gray-03 items-center flex-col static">
             <div className="border border-gray-05 w-full"></div>
             <div class="px-2 bg-special-mainBg absolute"> 
@@ -82,7 +96,7 @@ const AuthLayout = (props) => {
           {/* sign in with google end */}
           {/* link start */}
           <div className="flex justify-center">
-            {type == "sign up" ? (
+            {type == "sign in" || type == "sign up" && (component Google)(
               <>
               <span className="text-sm text-gray-03">
                 Already have an account?&nbsp;
@@ -90,12 +104,15 @@ const AuthLayout = (props) => {
               <Link to="/login" className="text-primary text-sm font-bold">
                 Sign In Here 
               </Link>
+              <Link to="/login" className="text-gray-03">
+                Back to Login  
+              </Link>
             </>
           ) : (
             <Link to="/register" className="text-primary text-sm font-bold">
               Create an account 
             </Link>
-    )}
+            )}
     </div>
     {/* link end */}
       </div>
