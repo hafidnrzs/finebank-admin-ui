@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Icon } from "../Elements/Icon";
+import Logo from "../Elements/Logo";
 
 const Navbar = () => {
   const menus = [
@@ -78,7 +79,7 @@ const Navbar = () => {
       <div className="border-b my-10 border-b-special-bg"></div>
       <div className="flex justify-between">
         <div className="mx-auto sm:mx-0 self-center">
-            <img src="images/profile.png" />
+            <img src="images/profile.png.png" />
         </div>
         <div className="hidden sm:block">
           <div className="text-white font-bold">Username</div>
