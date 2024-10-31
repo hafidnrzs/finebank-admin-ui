@@ -120,12 +120,19 @@ const AuthLayout = (props) => {
         <div className="flex justify-center">
           {type == "sign up" && (
             <>
+              <div className="text-center mt-4">
               <span className="text-sm text-gray-03">
                 Already have an account?&nbsp;
               </span>
               <Link to="/login" className="text-primary text-sm font-bold">
                 Sign In Here
               </Link>
+              <div className="mt-5">
+              <Link to="/forgot" className="text-gray-03 text-sm font-bold">
+                Forgot Password
+              </Link>
+              </div>
+              </div>
             </>
           )}
           {type == "sign in" && (
