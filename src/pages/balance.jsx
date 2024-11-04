@@ -1,37 +1,28 @@
 import Card from "../components/Elements/Card";
 import MainLayout from "../components/Layout/MainLayout";
 
-const BalancePage = () => {
+const Balance = () => {
   return (
     <MainLayout type="balance">
       {/* top content start*/}
-      <div className="mb-8 sm:flex sm:gap-6">
-        <div className="sm:w-1/3">
-          <Card />
-        </div>
-        <div className="sm:w-1/3">
-          <Card />
-        </div>
-        <div className="sm:w-1/3">
-          <Card />
-        </div>
+      <div className="md:grid md:grid-cols-3 md:gap-x-6">
+        <Card title="Balances" />
+        <Card title="&nbsp;" />
+        <Card 
+          title="&nbsp;" 
+          desc="Lorem ipsum dolor"  
+        /> 
       </div>
-      {/* top content end*/}
-      {/* bottom content start*/}
-      <div className="mb-8 sm:flex sm:gap-6">
-        <div className="sm:w-1/3">
-          <Card />
-        </div>
-        <div className="m:w-1/3">
-          <Card />
-        </div>
-        <div className="sm:w-1/3">
-          <Card />
-        </div>
+      {/*top content end*/}
+      {/*botton content start*/}
+      <div className="md:grid md:grid-cols-3 md:gap-6">
+        <Card desc="Lorem ipsum dolor"/>
+        <Card />
+        <Card />
       </div>
       {/* bottom content end*/}
     </MainLayout>
   );
 };
 
-export default BalancePage;
+export default Balance;
