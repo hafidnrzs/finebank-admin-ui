@@ -10,13 +10,13 @@ const Balance = () => {
         <Card title="&nbsp;" />
         <Card 
           title="&nbsp;" 
-          desc="Lorem ipsum dolor"  
+          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, omnis optio. Adipisci, eum ipsa eaque consequuntur dolorum recusandae, officia explicabo quos, sequi sunt corporis eos minima modi nam et id?"  
         /> 
       </div>
       {/*top content end*/}
       {/*botton content start*/}
       <div className="md:grid md:grid-cols-3 md:gap-6">
-        <Card desc="Lorem ipsum dolor"/>
+        <Card desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, omnis optio. Adipisci, eum ipsa eaque consequuntur dolorum recusandae, officia explicabo quos, sequi sunt corporis eos minima modi nam et id?"/>
         <Card />
         <Card />
       </div>

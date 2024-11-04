@@ -9,7 +9,7 @@ const Dashboard = () => {
             <Card title="Total Balance" />
             <Card 
                 title="Goals" 
-                desc="Lorem, ipsum dolor"
+                desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, omnis optio. Adipisci, eum ipsa eaque consequuntur dolorum recusandae, officia explicabo quos, sequi sunt corporis eos minima modi nam et id?"
             />
             <Card title="Upcoming Bill" />
         </div>
@@ -19,7 +19,7 @@ const Dashboard = () => {
             <div className="md:col-span-1">
                 <Card 
                     title="Recent Transaction" 
-                    desc="Lorem, ipsum dolor"
+                    desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, omnis optio. Adipisci, eum ipsa eaque consequuntur dolorum recusandae, officia explicabo quos, sequi sunt corporis eos minima modi nam et id?"
                 />
             </div>
             <div className="md:col-span-2 flex flex-col flex-1">

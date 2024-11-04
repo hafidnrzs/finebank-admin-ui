@@ -18,18 +18,18 @@ const Expenses = () => {
         <Card title="&nbsp;" />
         <Card 
           title="&nbsp;" 
-          desc="Lorem ipsum dolor"  
+          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, omnis optio. Adipisci, eum ipsa eaque consequuntur dolorum recusandae, officia explicabo quos, sequi sunt corporis eos minima modi nam et id?"  
         /> 
       </div>
       <div className="md:grid md:grid-cols-3 md:gap-x-6">
         <Card 
-            desc="Lorem Ipsum"
-        />
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, omnis optio. Adipisci, eum ipsa eaque consequuntur dolorum recusandae, officia explicabo quos, sequi sunt corporis eos minima modi nam et id?"
+        /> 
         <Card
-            desc="Lorem Ipsum"
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, omnis optio. Adipisci, eum ipsa eaque consequuntur dolorum recusandae, officia explicabo quos, sequi sunt corporis eos minima modi nam et id?"
         />
         <Card 
-            desc="Lorem Ipsum"
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, omnis optio. Adipisci, eum ipsa eaque consequuntur dolorum recusandae, officia explicabo quos, sequi sunt corporis eos minima modi nam et id?"
         />
       </div>
       {/* bottom content end*/}
