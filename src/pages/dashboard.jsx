@@ -51,7 +51,7 @@ const Dashboard = () => {
     </div>
   ));
   const transactionCard = transactions.map((transaction) => (
-    <div key={transaction.id} className="flex">
+    <div key={transaction.id} className="flex justify-between my-6">
       <div className="flex">
         <div className="bg-special-bg px-3 rounded-lg flex flex-col place-content-center">
           {/* {transaction.icon} */}
