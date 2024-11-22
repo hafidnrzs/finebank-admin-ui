@@ -1,7 +1,30 @@
 import Card from "../components/Elements/Card";
 import MainLayout from "../components/Layout/MainLayout";
+import bills from "../data/bills";
+//import expensesBreakdown from "../data/expenses";
+//import transactions from "../data/transactions";
 
 const Dashboard = () => {
+  const billCard = bills.map((bill) => (
+    <div key={bill.id} className="flex">
+      <div className="flex">
+        <div>
+          {bill.month}
+          <br />
+          {bill.date} 
+        </div>
+        <div>
+          <img src={`/images/${bill.logo}`} /> 
+          {bill.name}
+          <br />
+          Last Charge - {bill.lastCharge}
+        </div>
+      </div>
+      <div>${bill.amount}</div>
+    </div>
+  ));
+  //const expenseCard = expensesBreakdown.map((expense) => <div key={expense.id}>{expense.name}</div>);
+  //const transactionCard = transactions.map((transaction) => <div key={transaction.id}>{transaction.name}</div>);
   return (
     <MainLayout type="dashboard">
       {/* top content start*/}
@@ -11,7 +34,7 @@ const Dashboard = () => {
                 title="Goals" 
                 desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, omnis optio. Adipisci, eum ipsa eaque consequuntur dolorum recusandae, officia explicabo quos, sequi sunt corporis eos minima modi nam et id?"
             />
-            <Card title="Upcoming Bill" />
+            <Card title="Upcoming Bills" desc={billCard} />
         </div>
         {/* top content end*/}
         {/* bottom content start*/} 

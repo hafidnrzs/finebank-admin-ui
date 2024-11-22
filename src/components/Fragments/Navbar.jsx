@@ -26,7 +26,7 @@ const Navbar = () => {
         id: "bill",
         link: "/bill",
         icon: <Icon.Bill />,
-        label: "Bilss",
+        label: "Bills",
     },
     {
         id: "expenses",
@@ -45,12 +45,6 @@ const Navbar = () => {
         link: "/settings",
         icon: <Icon.Settings />,
         label: "Settings",
-    },
-    {
-        id: "logout",
-        link: "/logout",
-        icon: <Icon.Logout />,
-        label: "Logout",
     },
   ];
 
