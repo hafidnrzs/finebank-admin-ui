@@ -173,6 +173,39 @@ const IconWrapper = ({ children }) => (
       <path d="M21 25V19H29V25H21ZM11 29V19H19V29H11ZM21 37V27H29V37H21ZM11 37V31H19V37H11ZM13 27H17V21H13V27ZM23 35H27V29H23V35ZM23 23H27V21H23V23ZM13 35H17V33H13V35Z" fill="#878787"/>
     </IconWrapper>
   );
+
+  const EntertaimentIcon = () => (
+    <IconWrapper>
+       <path d="M22.75 23.46L20 19.93L21.97 19.54L24.71 23.07L22.75 23.46ZM29.62 22.1L28.84 18.18L24.91 18.96L27.65 22.5L29.62 22.1ZM19.81 24.05L17.07 20.5L15.1 20.91L17.85 24.44L19.81 24.05ZM12.16 21.5L11.18 21.69C10.9224 21.7408 10.6774 21.8419 10.4589 21.9876C10.2405 22.1333 10.053 22.3207 9.90713 22.539C9.76127 22.7574 9.65994 23.0023 9.60896 23.2599C9.55797 23.5175 9.55833 23.7826 9.61001 24.04L10 26L14.9 25.03L12.16 21.5ZM12 36V28H28V29.09C28.72 29.21 29.39 29.46 30 29.81V26H10V36C10 36.5304 10.2107 37.0391 10.5858 37.4142C10.9609 37.7893 11.4696 38 12 38H21.81C21.46 37.39 21.22 36.72 21.09 36H12ZM29.34 31.84L25.75 35.43L24.16 33.84L23 35L25.75 38L30.5 33.25L29.34 31.84Z" fill="#878787"/>
+    </IconWrapper>
+  );
+
+  const HousingIcon = () => (
+    <IconWrapper>
+      <path d="M18.3333 21V22.7842L20 23.8342V22.5789H28.3333V34.4211H24.1667V36H30V21H18.3333ZM16.25 23.3684L10 27.3158V36H22.5V27.3158L16.25 23.3684ZM21.6667 24.1579V24.8921L23.0083 25.7368H23.3333V24.1579H21.6667ZM25 24.1579V25.7368H26.6667V24.1579H25ZM16.25 25.3421L20.8333 28.1053V34.4211H18.3333V29.6842H14.1667V34.4211H11.6667V28.1053L16.25 25.3421ZM25 27.3158V28.8947H26.6667V27.3158H25ZM25 30.4737V32.0526H26.6667V30.4737H25Z" fill="#878787"/>
+    </IconWrapper>
+  );
+
+  const ArrowUpIcon = () => (
+    <IconWrapper>
+      <path d="M8 12.6667V3.33334" stroke="#E73D1C" stroke-width="1.5" strokelinecap="round" strokeLinejoin="round"/>
+      <path d="M3.33334 8.00001L8.00001 3.33334L12.6667 8.00001" stroke="#E73D1C" stroke-width="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </IconWrapper>
+  );
+
+  const ArrowDownIcon = () => (
+    <IconWrapper>
+      <path d="M8 2.33325V11.6666" stroke="#4DAF6E" stroke-width="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12.6666 7L7.99992 11.6667L3.33325 7" stroke="#4DAF6E" stroke-width="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </IconWrapper>
+  );
+
+  const ArrowRightIcon = () => (
+    <IconWrapper>
+      <path d="M3 12L22 12" stroke="#9F9F9F" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M15 5L22 12L15 19" stroke="#9F9F9F" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </IconWrapper>
+  );
   
   export const Icon = {
     Overview: OverviewIcon,
@@ -188,5 +221,10 @@ const IconWrapper = ({ children }) => (
     Food: FoodIcon,
     Transportation: TransportationIcon, 
     Others: OthersIcon,
+    Entertaiment: EntertaimentIcon,
+    Housing: HousingIcon,
+    ArrowUp: ArrowUpIcon,
+    ArrowDown: ArrowDownIcon,
+    ArrowRight: ArrowRightIcon,
   };
   

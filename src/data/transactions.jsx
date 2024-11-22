@@ -1,3 +1,5 @@
+import { Icon } from "../components/Elements/Icon";
+
 const transactions = [
     {
       id: 1,
@@ -41,7 +43,7 @@ const transactions = [
       paymentMethod: "Credit Card",
       amount: 15,
       type: "Expense",
-      // icon: <Icon.Food />,
+      icon: <Icon.Film />,
     },
     {
       id: 5,
