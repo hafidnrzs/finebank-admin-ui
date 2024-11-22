@@ -6,6 +6,8 @@ import expensesBreakdown from "../data/expensesBreakdown";
 import transactions from "../data/transactions";
 
 const Dashboard = () => {
+  const tabs = ["All", "Revenue", "Expense"];
+
   const billCard = bills.map((bill) => (
     <div key={bill.id} className="lg:flex justify-between pt-3 pb-3">
       <div className="flex">
@@ -49,7 +51,27 @@ const Dashboard = () => {
     </div>
   ));
   const transactionCard = transactions.map((transaction) => (
-    <div key={transaction.id}>{transaction.name}</div>
+    <div key={transaction.id} className="flex">
+      <div className="flex">
+        <div className="bg-special-bg px-3 rounded-lg flex flex-col place-content-center">
+          {/* {transaction.icon} */}
+        </div>
+        <div className="ms-4">
+          <span className="text-xl font-bold">
+            {transaction.transactionName}
+          </span>
+          <br />
+          <span className="text-gray-02">{transaction.shopName}</span>
+        </div>
+      </div>
+      <div className="text-right">
+        <span className="text-xl font-bold text-gray-02">
+          ${transaction.amount}
+        </span>
+        <br />
+        <span className="text-gray-02">{transaction.date}</span>
+      </div>
+    </div>
   ));
   return (
     <MainLayout type="dashboard">
@@ -69,7 +91,22 @@ const Dashboard = () => {
           <Card
             variant="md:col-span-1 md:row-span-2"
             title="Recent Transaction"
-            desc={transactionCard}
+            desc={
+              <div>
+                <div className="mb-4">
+                  {tabs.map((tab) => (
+                    <button
+                      className="px-4 font-bold text-gray-01"
+                      key={tab}
+                      value={tab}
+                    >
+                      {tab}
+                    </button>
+                  ))}
+                </div>
+                {transactionCard}
+              </div>
+            }
           />
         </div>
         <div className="md:col-span-2 flex flex-col flex-1">
