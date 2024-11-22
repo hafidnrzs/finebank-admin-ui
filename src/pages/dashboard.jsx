@@ -1,12 +1,17 @@
-// import { ArrowRight } from "@mui/material";
 import Card from "../components/Elements/Card";
 import MainLayout from "../components/Layout/MainLayout";
 import bills from "../data/bills";
 import expensesBreakdown from "../data/expensesBreakdown";
 import transactions from "../data/transactions";
+import { useState } from "react";
 
 const Dashboard = () => {
   const tabs = ["All", "Revenue", "Expense"];
+  const [activeTab, setActiveTab] = useState("All");
+
+  function handleClick(e) {
+    setActiveTab(e.target.value);
+  }
 
   const billCard = bills.map((bill) => (
     <div key={bill.id} className="lg:flex justify-between pt-3 pb-3">
@@ -96,9 +101,14 @@ const Dashboard = () => {
                 <div className="mb-4">
                   {tabs.map((tab) => (
                     <button
-                      className="px-4 font-bold text-gray-01"
+                      className={
+                        activeTab == tab
+                          ? "px-4 font-bold border-b-4 border-primary text-primary"
+                          : "px-4 font-bold text-gray-01"
+                      }
                       key={tab}
                       value={tab}
+                      onClick={handleClick}
                     >
                       {tab}
                     </button>
