@@ -7,10 +7,18 @@ import { useState } from "react";
 
 const Dashboard = () => {
   const tabs = ["All", "Revenue", "Expense"];
+
+  const [trxs, setTrx] = useState(transactions);
   const [activeTab, setActiveTab] = useState("All");
 
   function handleClick(e) {
+    const transactionsFiltered =
+      e.target.value != "All"
+        ? transactions.filter(({ type }) => type == e.target.value)
+        : transactions;
+
     setActiveTab(e.target.value);
+    setTrx(transactionsFiltered);
   }
 
   const billCard = bills.map((bill) => (
@@ -55,7 +63,7 @@ const Dashboard = () => {
       </div>
     </div>
   ));
-  const transactionCard = transactions.map((transaction) => (
+  const transactionCard = trxs.map((transaction) => (
     <div key={transaction.id} className="flex justify-between my-6">
       <div className="flex">
         <div className="bg-special-bg px-3 rounded-lg flex flex-col place-content-center">
