@@ -1,5 +1,3 @@
-import { Icon } from "../components/Elements/Icon";
-
 const transactions = [
     {
       id: 1,
@@ -10,7 +8,7 @@ const transactions = [
       paymentMethod: "Credit Card",
       amount: 160,
       type: "Expense",
-      icon: <Icon.Shopping />,
+      // icon: <Icon.Shopping />,
     },
     {
       id: 2,
@@ -21,7 +19,7 @@ const transactions = [
       paymentMethod: "Credit Card",
       amount: 20,
       type: "Expense",
-      icon: <Icon.Shopping />,
+      // icon: <Icon.Shopping />,
     },
     {
       id: 3,
@@ -32,7 +30,7 @@ const transactions = [
       paymentMethod: "Credit Card",
       amount: 12,
       type: "Expense",
-      icon: <Icon.Food />,
+      // icon: <Icon.Food />,
     },
     {
       id: 4,
@@ -43,7 +41,7 @@ const transactions = [
       paymentMethod: "Credit Card",
       amount: 15,
       type: "Expense",
-      icon: <Icon.Film />,
+      // icon: <Icon.Food />,
     },
     {
       id: 5,
@@ -54,7 +52,7 @@ const transactions = [
       paymentMethod: "Credit Card",
       amount: 10,
       type: "Expense",
-      icon: <Icon.Transportation />,
+      // icon: <Icon.Transportation />,
     },
     {
       id: 6,
@@ -65,7 +63,7 @@ const transactions = [
       paymentMethod: "Credit Card",
       amount: 20,
       type: "Expense",
-      icon: <Icon.Food />,
+      // icon: <Icon.Food />,
     },
     {
       id: 7,
@@ -76,7 +74,7 @@ const transactions = [
       paymentMethod: "Credit Card",
       amount: 30,
       type: "Expense",
-      icon: <Icon.Shopping />,
+      // icon: <Icon.Shopping />,
     },
     {
       id: 8,
@@ -87,7 +85,7 @@ const transactions = [
       paymentMethod: "Credit Card",
       amount: 100,
       type: "Revenue",
-      icon: <Icon.Others />,
+      // icon: <Icon.Others />,
     },
   ];
   

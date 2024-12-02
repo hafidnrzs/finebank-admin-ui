@@ -46,7 +46,7 @@ const Dashboard = () => {
     <div key={expense.id} className="flex pb-4 justify-between">
       <div className="flex">
         <div className="bg-special-bg px-3 rounded-lg flex flex-col place-content-center">
-          {expense.icon}
+          {/* {expense.icon} */}
         </div>
         <div className="ms-4">
           <span className="text-gray-02">{expense.category}</span>
@@ -54,12 +54,12 @@ const Dashboard = () => {
           <span className="font-bold text-lg">${expense.amount}</span>
           <div className="flex">
             <span className="text-gray-02">{expense.percentage}%</span>{" "}
-            {expense.arrow}
+            {/* {expense.arrow} */}
           </div>
         </div>
       </div>
       <div className="flex place-content-center flex-col me-8">
-        <Icon.ArrowRight />
+        {/* <Icon.ArrowRight /> */}
       </div>
     </div>
   ));
@@ -67,7 +67,7 @@ const Dashboard = () => {
     <div key={transaction.id} className="flex justify-between my-6">
       <div className="flex">
         <div className="bg-special-bg px-3 rounded-lg flex flex-col place-content-center">
-          {transaction.icon}
+          {/* {transaction.icon} */}
         </div>
         <div className="ms-4">
           <span className="text-xl font-bold">
