@@ -10,7 +10,7 @@ const transactions = [
       paymentMethod: "Credit Card",
       amount: 160,
       type: "Expense",
-      icon: <Icon.Shopping />,
+      icon: <Icon.Game />,
     },
     {
       id: 2,
