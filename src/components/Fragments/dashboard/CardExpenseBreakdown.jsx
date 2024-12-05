@@ -1,6 +1,6 @@
 import expensesBreakdowns from "../../../data/expensesBreakdown";
 import Card from "../../Elements/Card";
-import { Icon } from "../../Elements/Icon";
+//import { Icon } from "../../Elements/Icon";
 
 const CardExpenseBreakdown = () => {
     const expenseCard = expensesBreakdowns.map((expensesBreakdown) => (

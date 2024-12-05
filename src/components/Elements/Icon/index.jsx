@@ -205,7 +205,7 @@ const IconWrapper = ({ children }) => (
       <path d="M3 12L22 12" stroke="#9F9F9F" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path d="M15 5L22 12L15 19" stroke="#9F9F9F" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/>
     </IconWrapper>
-  ); 
+  );
   
   export const Icon = {
     Overview: OverviewIcon,
@@ -224,7 +224,7 @@ const IconWrapper = ({ children }) => (
     Entertaiment: EntertaimentIcon,
     Housing: HousingIcon,
     ArrowUp: ArrowUpIcon, 
-    ArrowDown: ArrowDownIcon, 
+    ArrowDown: ArrowDownIcon,
     ArrowRight: ArrowRightIcon,
   };
   

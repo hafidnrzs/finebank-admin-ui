@@ -1,3 +1,5 @@
+import { Icon } from "../components/Elements/Icon";
+
 export const expensesBreakdown = [
     {
       id: 1,
@@ -28,7 +30,7 @@ export const expensesBreakdown = [
       category: "Entertainment",
       amount: 80,
       percentage: 15,
-      icon: <Icon.Entertainment />,
+      icon: <Icon.Entertaiment />,
       arrow: <Icon.ArrowUp />,
     },
     {

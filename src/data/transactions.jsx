@@ -1,3 +1,5 @@
+import { Icon } from "../components/Elements/Icon";
+
 const transactions = [
     {
       id: 1,
